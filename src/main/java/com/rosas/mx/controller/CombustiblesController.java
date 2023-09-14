@@ -3,6 +3,7 @@ package com.rosas.mx.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
 @Controller
 @RequestMapping("/combustibles")
 public class CombustiblesController {
@@ -12,4 +13,6 @@ public class CombustiblesController {
 		
 		return "pages/catalogoTipoCombustibles/CatComb" ;
 	}
+	
+	
 }
