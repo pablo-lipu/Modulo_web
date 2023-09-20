@@ -1,25 +1,20 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org" lang="es">
-
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-	<title>Tipo Combustibles</title>
+	<title>Usuarios</title>
 	<!-- Agregar jQuery desde la CDN de Google -->
-
 	<title>DataTable Ejemplo</title>
-
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	<!-- DataTables CSS y JS -->
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
 </head>
-
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
@@ -65,84 +60,44 @@
 			</div>
 		</div>
 	</nav>
-	<h1>Tabla de combustibles</h1>
+	
+
+    <div class="row mt-5" >
+        <div class="col-md-12 d-flex justify-content-center">
+            <h1>Usuarios</h1>
+        </div>
+    </div>
 
 
 	<div class="container mt-5 mb-5">
-		<div class="row mb-5">
-			<div class="d-flex justify-content-between">
-				<div>
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-						Crear Combustible
-					</button>
-
-					<!-- Modal -->
-					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-						aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title" id="h1">Crear Combustible</h5>
-									<button type="button" class="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<form id="formCrear">
-										<div class="mb-3">
-											<label for="exampleInputEmail1" class="form-label">Nombre</label>
-											<input type="text" class="form-control" id="inputNombre"
-												aria-describedby="emailHelp">
-											<div id="emailHelp" class="form-text">Escribre el nombre</div>
-										</div>
-										<div class="mb-3">
-											<label for="exampleInputEmail1" class="form-label">Descripcion</label>
-											<input type="text" class="form-control" id="inputDescripcion"
-												aria-describedby="emailHelp">
-											<div id="emailHelp" class="form-text">Escribre una breve descripcion del
-												Combustible.</div>
-										</div>
-									</form>
-								</div>
-								<div class="modal-footer ">
-									<div >
-									
-										<button id="botonCrear" type="submit" class="btn btn-outline-success">Crear</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="row">
 			<div class="col-md-10">
 
-				<table id="miTabla" class="table-hover table-striped display" style="width:100%">
-				</table>
+				<table id="miTablaUsuario"
+				class="table-hover table-striped display" style="width:100%">
+			    </table>
 
 			</div>
 		</div>
 
 	</div>
 
-	
 	<!-- Option 1: Bootstrap Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
 	<!-- Agregar jQuery desde la CDN de Google -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<!-- Asociar tu archivo combustibles.js -->
-	<script th:src="@{/js/catCombustibles.js}">   </script>
+
+	<!-- Asociar tu archivo usuarios.js -->
+	<script th:src="@{/js/catCUsuarios.js}">   </script>
 
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" charset="utf8"
 		src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
 
-	<!-- Formatedor de fechas-->
+			<!-- Formatedor de fechas-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 </body>
 
